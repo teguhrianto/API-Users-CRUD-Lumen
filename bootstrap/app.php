@@ -98,7 +98,7 @@ $app->router->group([
 });
 
 //$app->register(App\Providers\AppServiceProvider::class);
-
+$app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 $app->register(Illuminate\Mail\MailServiceProvider::class);
 $app->register(Kreait\Laravel\Firebase\ServiceProvider::class);
 
