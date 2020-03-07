@@ -97,7 +97,7 @@ $app->router->group([
     require __DIR__.'/../routes/web.php';
 });
 
-$app->register(App\Providers\AppServiceProvider::class);
+//$app->register(App\Providers\AppServiceProvider::class);
 
 $app->register(Illuminate\Mail\MailServiceProvider::class);
 $app->register(Kreait\Laravel\Firebase\ServiceProvider::class);
