@@ -14,12 +14,12 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name' => 'Admin',
+            'name' => 'Teguh Rianto',
             'identity_id' => '12345678345',
             'gender' => 1,
             'address' => 'Cimahi',
             'photo' => '', //note: tidak ada gambar
-            'email' => 'admin@daengweb.id',
+            'email' => 'hello@teguhrianto.my.id',
             'password' => app('hash')->make('admin'),
             'phone_number' => '085343966997',
             'api_token' => Str::random(40),

@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
                 $table->char('gender', 1)->comment('0: female, 1: male')->default(0);
                 $table->string('address');
                 $table->string('photo');
-                $table->string('email')->unique();
+                $table->string('email', 250)->unique();
                 $table->string('password');
                 $table->string('phone_number');
                 $table->string('api_token', 40);
